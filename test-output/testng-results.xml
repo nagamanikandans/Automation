@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-03-16T16:06:57Z" name="MY Store Application Test Automation Test Suite" finished-at="2021-03-16T16:09:48Z" duration-ms="171380">
+    <groups>
+    </groups>
+    <test started-at="2021-03-16T16:06:57Z" name="MY store App Test Cases" finished-at="2021-03-16T16:09:48Z" duration-ms="171380">
+      <class name="com.mystore.qa.testcases.CheckoutPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.CheckoutPageTest@544fa968]" started-at="2021-03-16T21:36:57Z" name="setUp" finished-at="2021-03-16T21:38:04Z" duration-ms="66456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="checkoutPageTitleTest()[pri:0, instance:com.mystore.qa.testcases.CheckoutPageTest@544fa968]" started-at="2021-03-16T21:38:04Z" name="checkoutPageTitleTest" finished-at="2021-03-16T21:38:04Z" duration-ms="43" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutPageTitleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.CheckoutPageTest@544fa968]" started-at="2021-03-16T21:38:04Z" name="tearDown" finished-at="2021-03-16T21:38:05Z" duration-ms="1033" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.CheckoutPageTest@544fa968]" started-at="2021-03-16T21:38:05Z" name="setUp" finished-at="2021-03-16T21:39:03Z" duration-ms="57975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="confirmOrder()[pri:0, instance:com.mystore.qa.testcases.CheckoutPageTest@544fa968]" started-at="2021-03-16T21:39:03Z" name="confirmOrder" finished-at="2021-03-16T21:39:23Z" duration-ms="20854" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confirmOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.CheckoutPageTest@544fa968]" started-at="2021-03-16T21:39:23Z" name="tearDown" finished-at="2021-03-16T21:39:24Z" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mystore.qa.testcases.CheckoutPageTest -->
+      <class name="com.mystore.qa.testcases.OrderHistoryPageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mystore.qa.testcases.OrderHistoryPageTest@ae13544]" started-at="2021-03-16T21:39:24Z" name="setUp" finished-at="2021-03-16T21:39:42Z" duration-ms="17304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="orderHistoryDetails()[pri:0, instance:com.mystore.qa.testcases.OrderHistoryPageTest@ae13544]" started-at="2021-03-16T21:39:42Z" name="orderHistoryDetails" finished-at="2021-03-16T21:39:47Z" duration-ms="5870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mystore.qa.testcases.OrderHistoryPageTest@ae13544]" started-at="2021-03-16T21:39:47Z" name="tearDown" finished-at="2021-03-16T21:39:48Z" duration-ms="1018" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mystore.qa.testcases.OrderHistoryPageTest -->
+    </test> <!-- MY store App Test Cases -->
+  </suite> <!-- MY Store Application Test Automation Test Suite -->
+</testng-results>
