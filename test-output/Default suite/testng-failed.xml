@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.mystore.qa.testcases.OrderHistoryPageTest">
+      <class name="com.mystore.qa.testcases.MyAccountPageTest">
         <methods>
+          <include name="NavigateMyAddressPage"/>
           <include name="setUp"/>
-          <include name="orderHistoryDetails"/>
         </methods>
-      </class> <!-- com.mystore.qa.testcases.OrderHistoryPageTest -->
+      </class> <!-- com.mystore.qa.testcases.MyAccountPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
