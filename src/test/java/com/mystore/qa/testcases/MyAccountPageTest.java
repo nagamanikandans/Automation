@@ -2,7 +2,9 @@ package com.mystore.qa.testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.mystore.qa.base.TestBase;
@@ -21,7 +23,7 @@ public class MyAccountPageTest extends TestBase {
 		super();
 	}
 	
-	@BeforeMethod
+	@BeforeSuite
 	public void setUp(){
 		initialization();
 		SignInPage = new SignInPage();
@@ -31,18 +33,14 @@ public class MyAccountPageTest extends TestBase {
 		MyAccountPage = new MyAccountPage();
 		}
 	
-	@Test(priority=1)
-	public void myAccountPageTitleTest() {
-		String AccountPageTitle = MyAccountPage.validateMyAccountTitle();
-		Assert.assertEquals(AccountPageTitle, "My account - My Store");
-	}
-	
-	@Test(priority=2)
+	@Test
 	public void NavigateMyAddressPage() {
-		MyAccountPage.navigateMyAddress();		
+		MyAccountPage.navigateMyAddress();
+		boolean addNewAddressBtn = MyAccountPage.validateAddNewAddressButton();
+		Assert.assertTrue(addNewAddressBtn);
 	}
 	
-	@AfterMethod
+	@AfterSuite
 	public void tearDown() {
 		driver.quit();
 	}

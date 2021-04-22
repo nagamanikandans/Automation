@@ -17,6 +17,9 @@ public class LoginPage extends TestBase{
 	@FindBy(id="passwd")
 	WebElement password;
 	
+	@FindBy(id="search_query_top")
+	WebElement searchBox;
+	
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -26,6 +29,10 @@ public class LoginPage extends TestBase{
 	}
 	public boolean ValidateSignInButton() {
 		return signInButton.isDisplayed();
+	}
+	
+	public boolean ValidateSearchButton() {
+		return searchBox.isDisplayed();
 	}
 	public MyAccountPage login(String usrname, String pwd) {
 		username.sendKeys(usrname);

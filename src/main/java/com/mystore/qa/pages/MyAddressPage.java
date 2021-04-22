@@ -10,8 +10,11 @@ import com.mystore.qa.base.TestBase;
 public class MyAddressPage extends TestBase {
 
 
-	@FindBy(xpath="//*[@id=\"center_column\"]/div/a/span")
+	@FindBy(xpath="//span[text()='Add a new address']")
 	WebElement addNewAddress;
+	
+	@FindBy(xpath="//p[text()='To add a new address, please fill out the form below.']")
+	WebElement addressText;
 	
 	public MyAddressPage() {
 		PageFactory.initElements(driver, this);
@@ -19,6 +22,10 @@ public class MyAddressPage extends TestBase {
 	
 	public String validateAddressPageTitle(){
 		return driver.getTitle();
+	}
+	
+	public boolean addressTextValidation() {
+		return addressText.isDisplayed();
 	}
 	
 	public AddNewAddress addNewAdd() {

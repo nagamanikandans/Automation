@@ -8,9 +8,12 @@ import com.mystore.qa.base.TestBase;
 
 public class MyAccountPage extends TestBase {
 	
-	@FindBy(xpath="//*[@id=\"center_column\"]/div/div[1]/ul/li[4]/a")
-	
+	//@FindBy(xpath="//*[@id=\"center_column\"]/div/div[1]/ul/li[4]/a")
+	@FindBy(xpath="//span[text()='My addresses']")
 	WebElement myAdd;
+	
+	@FindBy(xpath="//span[text()='Add a new address']")
+	WebElement addNewAddress;
 	
 	public MyAccountPage() {
 		PageFactory.initElements(driver, this);
@@ -18,6 +21,10 @@ public class MyAccountPage extends TestBase {
 	
 	public String validateMyAccountTitle(){
 		return driver.getTitle();
+	}
+	
+	public boolean validateAddNewAddressButton() {
+		return addNewAddress.isDisplayed();
 	}
 	
 	public MyAddressPage navigateMyAddress() {

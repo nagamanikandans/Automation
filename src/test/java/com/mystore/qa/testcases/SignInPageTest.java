@@ -2,7 +2,9 @@ package com.mystore.qa.testcases;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.mystore.qa.base.TestBase;
@@ -20,30 +22,24 @@ public class SignInPageTest extends TestBase {
 		super();
 	}
 	
-	@BeforeMethod
+	@BeforeSuite
 	public void setUp(){
 		initialization();
 		SignInPage = new SignInPage();
 		}
 	
-	@Test(priority=1)
-	public void SignInPageTitleTest() {
+	@Test
+	public void SignInTest() {
 		String Title = SignInPage.validateLoginPageTitle();
 		Assert.assertEquals(Title, "My Store");
-	}
-	
-	@Test(priority=2)
-	public void SignInPageLogoTest() {
 		boolean logo = SignInPage.validateLogoImage();
 		Assert.assertTrue(logo);
-	}
-	
-	@Test(priority=3)
-	public void SignInTest() {
 		LoginPage = SignInPage.SignIn();
+	    boolean SignInbutton = SignInPage.SignInbtnValidation();
+	    Assert.assertTrue(SignInbutton);
 	}
 	
-	@AfterMethod
+	@AfterSuite
 	public void tearDown() {
 		driver.quit();
 	}

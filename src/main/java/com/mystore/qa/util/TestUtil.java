@@ -14,8 +14,8 @@ import com.mystore.qa.base.TestBase;
 
 public class TestUtil extends TestBase {
 
-	public static long PageLoadTimeout = 20;
-	public static long ImplicitWait = 20;
+	public static long PageLoadTimeout = 60;
+	public static long ImplicitWait = 30;
 	
 	public static String TestDataSheetPath = "C:\\Users\\nagamanikandans\\eclipse-workspace\\"
 			+ "AutomationPractice\\src\\main\\java\\com\\mysotre\\qa\\testdata\\MyStoreTestdata.xlsx";

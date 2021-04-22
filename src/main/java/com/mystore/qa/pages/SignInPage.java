@@ -8,11 +8,14 @@ import com.mystore.qa.base.TestBase;
 
 public class SignInPage extends TestBase {
 	
-	@FindBy(xpath="//*[@id=\"header\"]/div[2]/div/div/nav/div[1]/a")
+	@FindBy(xpath="//a[contains(@class, 'login')]")
 	WebElement signin;
 	
-	@FindBy(xpath="//*[@id=\"header_logo\"]/a/img")
+	@FindBy(xpath="//img[contains(@class,'logo img-responsive')]")
 	WebElement yourLogo;
+	
+	@FindBy(id="SubmitLogin")
+	WebElement SignInButton;
 	
 	public SignInPage() {
 		PageFactory.initElements(driver, this);
@@ -24,6 +27,10 @@ public class SignInPage extends TestBase {
 	
 	public boolean validateLogoImage(){
 		return yourLogo.isDisplayed();
+	}
+	
+	public boolean SignInbtnValidation() {
+		return SignInButton.isDisplayed();
 	}
 	
 	public LoginPage SignIn() {
